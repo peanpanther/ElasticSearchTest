@@ -1,0 +1,738 @@
+2015-08-03-11:32:19:973 - INFO  - Log4jESLogger - [Harker, Quincy] version[0.90.5], pid[8253], build[c8714e8/2013-09-17T12:50:20Z]
+2015-08-03-11:32:20:032 - INFO  - Log4jESLogger - [Harker, Quincy] initializing ...
+2015-08-03-11:32:20:033 - DEBUG - Log4jESLogger - [Harker, Quincy] using home [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated], config [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/config], data [[/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/data]], logs [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/logs], work [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/work], plugins [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/plugins]
+2015-08-03-11:32:20:071 - INFO  - Log4jESLogger - [Harker, Quincy] loaded [], sites []
+2015-08-03-11:32:20:117 - DEBUG - Log4jESLogger - using [UnsafeChunkDecoder] decoder
+2015-08-03-11:32:20:205 - TRACE - Log4jESLogger - [Harker, Quincy] obtaining node lock on /home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/data/peansData/nodes/0 ...
+2015-08-03-11:32:20:286 - DEBUG - Log4jESLogger - [Harker, Quincy] using node location [[/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/data/peansData/nodes/0]], local_node_id [0]
+2015-08-03-11:32:20:291 - TRACE - Log4jESLogger - [Harker, Quincy] node data locations details:
+ -> /home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/data/peansData/nodes/0, free_space [70gb], usable_space [64.8gb]
+
+2015-08-03-11:32:21:314 - TRACE - Log4jESLogger - [Harker, Quincy] sigar loaded successfully
+2015-08-03-11:32:22:182 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [generic], type [cached], keep_alive [30s]
+2015-08-03-11:32:22:212 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [index], type [fixed], size [4], queue_size [null]
+2015-08-03-11:32:22:217 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [bulk], type [fixed], size [4], queue_size [null]
+2015-08-03-11:32:22:217 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [get], type [fixed], size [4], queue_size [null]
+2015-08-03-11:32:22:219 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [search], type [fixed], size [12], queue_size [1k]
+2015-08-03-11:32:22:221 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
+2015-08-03-11:32:22:221 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
+2015-08-03-11:32:22:232 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
+2015-08-03-11:32:22:234 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:22:234 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [merge], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:22:234 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:22:235 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:22:235 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:22:235 - DEBUG - Log4jESLogger - [Harker, Quincy] creating thread_pool [optimize], type [fixed], size [1], queue_size [null]
+2015-08-03-11:32:22:314 - DEBUG - Log4jESLogger - [Harker, Quincy] using worker_count[8], port[9300-9400], bind_host[null], publish_host[null], compress[false], connect_timeout[30s], connections_per_node[2/6/1/1], receive_predictor[512kb->512kb]
+2015-08-03-11:32:22:324 - DEBUG - Log4jESLogger - [Harker, Quincy] using group [224.2.2.4], with port [54328], ttl [3], and address [null]
+2015-08-03-11:32:22:333 - DEBUG - Log4jESLogger - [Harker, Quincy] using initial hosts [], with concurrent_connects [10]
+2015-08-03-11:32:22:335 - DEBUG - Log4jESLogger - [Harker, Quincy] using ping.timeout [3s], master_election.filter_client [true], master_election.filter_data [false]
+2015-08-03-11:32:22:336 - DEBUG - Log4jESLogger - [Harker, Quincy] using minimum_master_nodes [-1]
+2015-08-03-11:32:22:337 - DEBUG - Log4jESLogger - [Harker, Quincy] [master] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2015-08-03-11:32:22:342 - DEBUG - Log4jESLogger - [Harker, Quincy] [node  ] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2015-08-03-11:32:22:454 - DEBUG - Log4jESLogger - [Harker, Quincy] enabled [true], last_gc_enabled [false], interval [1s], gc_threshold [{ParNew=GcThreshold{name='ParNew', warnThreshold=1000, infoThreshold=700, debugThreshold=400}, default=GcThreshold{name='default', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, ConcurrentMarkSweep=GcThreshold{name='ConcurrentMarkSweep', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}}]
+2015-08-03-11:32:22:962 - DEBUG - Log4jESLogger - [Harker, Quincy] Using probe [org.elasticsearch.monitor.os.SigarOsProbe@1a6f5124] with refresh_interval [1s]
+2015-08-03-11:32:23:040 - DEBUG - Log4jESLogger - [Harker, Quincy] Using probe [org.elasticsearch.monitor.process.SigarProcessProbe@66d23e4a] with refresh_interval [1s]
+2015-08-03-11:32:23:088 - DEBUG - Log4jESLogger - [Harker, Quincy] Using refresh_interval [1s]
+2015-08-03-11:32:23:089 - DEBUG - Log4jESLogger - [Harker, Quincy] Using probe [org.elasticsearch.monitor.network.SigarNetworkProbe@433ffad1] with refresh_interval [5s]
+2015-08-03-11:32:23:113 - DEBUG - Log4jESLogger - [Harker, Quincy] net_info
+host [khairul-OptiPlex-760]
+virbr0	display_name [virbr0]
+		address [/192.168.122.1] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+vmnet8	display_name [vmnet8]
+		address [/fe80:0:0:0:250:56ff:fec0:8%vmnet8] [/192.168.25.1] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+vmnet1	display_name [vmnet1]
+		address [/fe80:0:0:0:250:56ff:fec0:1%vmnet1] [/192.168.75.1] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+eth0	display_name [eth0]
+		address [/fe80:0:0:0:223:aeff:fe8a:d666%eth0] [/2407:4000:4:366:51da:cf4e:5792:5757%eth0] [/2407:4000:4:366:223:aeff:fe8a:d666%eth0] [/10.11.66.27] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+lo	display_name [lo]
+		address [/0:0:0:0:0:0:0:1%lo] [/127.0.0.1] 
+		mtu [65536] multicast [false] ptp [false] loopback [true] up [true] virtual [false]
+
+2015-08-03-11:32:23:124 - TRACE - Log4jESLogger - [Harker, Quincy] ifconfig
+
+lo	Link encap:Local Loopback
+	inet addr:127.0.0.1  Mask:255.0.0.0
+	UP LOOPBACK RUNNING  MTU:65536  Metric:1
+	RX packets:5646 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:5646 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:607483 (593K)  TX bytes:607483 (593K)
+eth0	Link encap:Ethernet HWaddr 00:23:AE:8A:D6:66
+	inet addr:10.11.66.27  Bcast:10.11.66.255  Mask:255.255.255.0
+	UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	RX packets:385303 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:184287 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:408117576 (389M)  TX bytes:25138154 ( 24M)
+vmnet1	Link encap:Ethernet HWaddr 00:50:56:C0:00:01
+	inet addr:192.168.75.1  Bcast:192.168.75.255  Mask:255.255.255.0
+	UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:137 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:0 (  0 )  TX bytes:0 (  0 )
+vmnet8	Link encap:Ethernet HWaddr 00:50:56:C0:00:08
+	inet addr:192.168.25.1  Bcast:192.168.25.255  Mask:255.255.255.0
+	UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:137 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:0 (  0 )  TX bytes:0 (  0 )
+virbr0	Link encap:Ethernet HWaddr BE:F8:B9:C9:06:59
+	inet addr:192.168.122.1  Bcast:192.168.122.255  Mask:255.255.255.0
+	UP BROADCAST MULTICAST  MTU:1500  Metric:1
+	RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:0 (  0 )  TX bytes:0 (  0 )
+
+2015-08-03-11:32:23:156 - DEBUG - Log4jESLogger - [Harker, Quincy] Using probe [org.elasticsearch.monitor.fs.SigarFsProbe@547e29a4] with refresh_interval [1s]
+2015-08-03-11:32:23:587 - DEBUG - Log4jESLogger - [Harker, Quincy] using indices.store.throttle.type [MERGE], with index.store.throttle.max_bytes_per_sec [20mb]
+2015-08-03-11:32:23:627 - DEBUG - Log4jESLogger - [Harker, Quincy] using bytebuffer cache with small_buffer_size [1kb], large_buffer_size [1mb], small_cache_size [10mb], large_cache_size [500mb], direct [true]
+2015-08-03-11:32:23:681 - DEBUG - Log4jESLogger - [Harker, Quincy] using script cache with max_size [500], expire [null]
+2015-08-03-11:32:23:685 - DEBUG - Log4jESLogger - [Harker, Quincy] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2015-08-03-11:32:23:687 - DEBUG - Log4jESLogger - [Harker, Quincy] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2015-08-03-11:32:23:687 - DEBUG - Log4jESLogger - [Harker, Quincy] using [cluster_concurrent_rebalance] with [2]
+2015-08-03-11:32:23:692 - DEBUG - Log4jESLogger - [Harker, Quincy] using initial_shards [quorum], list_timeout [30s]
+2015-08-03-11:32:23:820 - DEBUG - Log4jESLogger - [Harker, Quincy] using max_bytes_per_sec[20mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+2015-08-03-11:32:23:882 - DEBUG - Log4jESLogger - [Harker, Quincy] using max_chunk_size[8kb], max_header_size[8kb], max_initial_line_length[4kb], max_content_length[100mb], receive_predictor[512kb->512kb]
+2015-08-03-11:32:23:965 - DEBUG - Log4jESLogger - [Harker, Quincy] using index_buffer_size [273mb], with min_shard_index_buffer_size [4mb], max_shard_index_buffer_size [512mb], shard_inactive_time [30m]
+2015-08-03-11:32:23:966 - DEBUG - Log4jESLogger - [Harker, Quincy] using [node] weighted filter cache with size [20%], actual_size [546.1mb], expire [null], clean_interval [1m]
+2015-08-03-11:32:23:968 - DEBUG - Log4jESLogger - [Harker, Quincy] using size [-1] [-1b], expire [null]
+2015-08-03-11:32:23:983 - DEBUG - Log4jESLogger - [Harker, Quincy] using gateway.local.auto_import_dangled [YES], with gateway.local.dangling_timeout [2h]
+2015-08-03-11:32:24:009 - TRACE - Log4jESLogger - [Harker, Quincy] [upgrade]: processing [global-39]
+2015-08-03-11:32:24:097 - DEBUG - Log4jESLogger - [Harker, Quincy] took 87ms to load state
+2015-08-03-11:32:24:098 - TRACE - Log4jESLogger - [Harker, Quincy] [find_latest_state]: processing [global-39]
+2015-08-03-11:32:24:205 - DEBUG - Log4jESLogger - [Harker, Quincy] took 107ms to load started shards state
+2015-08-03-11:32:24:207 - DEBUG - Log4jESLogger - [Harker, Quincy] using enabled [false], host [null], port [9700-9800], bulk_actions [1000], bulk_size [5mb], flush_interval [5s], concurrent_requests [4]
+2015-08-03-11:32:24:218 - DEBUG - Log4jESLogger - [Harker, Quincy] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2015-08-03-11:32:24:219 - DEBUG - Log4jESLogger - [Harker, Quincy] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2015-08-03-11:32:24:220 - DEBUG - Log4jESLogger - [Harker, Quincy] using [cluster_concurrent_rebalance] with [2]
+2015-08-03-11:32:24:221 - DEBUG - Log4jESLogger - [Harker, Quincy] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2015-08-03-11:32:24:221 - DEBUG - Log4jESLogger - [Harker, Quincy] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2015-08-03-11:32:24:221 - DEBUG - Log4jESLogger - [Harker, Quincy] using [cluster_concurrent_rebalance] with [2]
+2015-08-03-11:32:24:226 - INFO  - Log4jESLogger - [Harker, Quincy] initialized
+2015-08-03-11:32:24:226 - INFO  - Log4jESLogger - [Harker, Quincy] starting ...
+2015-08-03-11:32:24:318 - DEBUG - Log4jESLogger - Using select timeout of 500
+2015-08-03-11:32:24:319 - DEBUG - Log4jESLogger - Epoll-bug workaround enabled = false
+2015-08-03-11:32:24:391 - DEBUG - Log4jESLogger - [Harker, Quincy] Bound to address [/0:0:0:0:0:0:0:0:9300]
+2015-08-03-11:32:24:396 - INFO  - Log4jESLogger - [Harker, Quincy] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.11.66.27:9300]}
+2015-08-03-11:32:24:439 - TRACE - Log4jESLogger - [Harker, Quincy] waiting for 30s for the initial state to be set by the discovery
+2015-08-03-11:32:24:467 - TRACE - Log4jESLogger - [Harker, Quincy] [1] sending ping request
+2015-08-03-11:32:25:977 - TRACE - Log4jESLogger - [Harker, Quincy] [1] sending ping request
+2015-08-03-11:32:27:482 - TRACE - Log4jESLogger - [Harker, Quincy] full ping responses: {none}
+2015-08-03-11:32:27:483 - DEBUG - Log4jESLogger - [Harker, Quincy] filtered ping responses: (filter_client[true], filter_data[false]) {none}
+2015-08-03-11:32:27:487 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [zen-disco-join (elected_as_master)]: execute
+2015-08-03-11:32:27:489 - TRACE - Log4jESLogger - [Harker, Quincy] cluster state updated:
+version [1], source [zen-disco-join (elected_as_master)]
+nodes: 
+   [Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]], local, master
+routing_table:
+routing_nodes:
+-----node_id[GlwW0umuTBOtr0tlXH6OIg][V]
+---- unassigned
+
+2015-08-03-11:32:27:490 - INFO  - Log4jESLogger - [Harker, Quincy] new_master [Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]], reason: zen-disco-join (elected_as_master)
+2015-08-03-11:32:27:926 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0x443f197b, /10.11.66.27:39017 => /10.11.66.27:9300]
+2015-08-03-11:32:27:929 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0xbc18ae6a, /10.11.66.27:39018 => /10.11.66.27:9300]
+2015-08-03-11:32:27:930 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0x5ecfef56, /10.11.66.27:39019 => /10.11.66.27:9300]
+2015-08-03-11:32:27:931 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0x38a7a368, /10.11.66.27:39020 => /10.11.66.27:9300]
+2015-08-03-11:32:27:932 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0x5bb0bee6, /10.11.66.27:39021 => /10.11.66.27:9300]
+2015-08-03-11:32:27:934 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0xdb7fd14d, /10.11.66.27:39022 => /10.11.66.27:9300]
+2015-08-03-11:32:27:934 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0xf4b7753f, /10.11.66.27:39023 => /10.11.66.27:9300]
+2015-08-03-11:32:27:935 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0xcb49c532, /10.11.66.27:39024 => /10.11.66.27:9300]
+2015-08-03-11:32:27:940 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0x2d743a03, /10.11.66.27:39025 => /10.11.66.27:9300]
+2015-08-03-11:32:27:941 - TRACE - Log4jESLogger - [Harker, Quincy] channel opened: [id: 0x43cecba5, /10.11.66.27:39026 => /10.11.66.27:9300]
+2015-08-03-11:32:27:942 - DEBUG - Log4jESLogger - [Harker, Quincy] connected to node [[Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]]]
+2015-08-03-11:32:27:943 - DEBUG - Log4jESLogger - [Harker, Quincy] Publishing cluster state version 1
+2015-08-03-11:32:27:943 - DEBUG - Log4jESLogger - [Harker, Quincy] Set cluster state to version 1. Broadcasting to listeners.
+2015-08-03-11:32:27:948 - TRACE - Log4jESLogger - [Harker, Quincy] I have been elected master, scheduling a ClusterInfoUpdateJob
+2015-08-03-11:32:27:949 - TRACE - Log4jESLogger - [Harker, Quincy] initial state set from discovery
+2015-08-03-11:32:27:949 - INFO  - Log4jESLogger - [Harker, Quincy] peansData/GlwW0umuTBOtr0tlXH6OIg
+2015-08-03-11:32:27:950 - TRACE - Log4jESLogger - [Harker, Quincy] performing state recovery...
+2015-08-03-11:32:27:950 - TRACE - Log4jESLogger - [Harker, Quincy] performing state recovery from [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:27:948 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [zen-disco-join (elected_as_master)]: done applying updated cluster_state (version: 1)
+2015-08-03-11:32:27:957 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [reroute_rivers_node_changed]: execute
+2015-08-03-11:32:27:957 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [reroute_rivers_node_changed]: no change in cluster_state
+2015-08-03-11:32:28:014 - TRACE - Log4jESLogger - [Harker, Quincy] successful state recovery, importing cluster state...
+2015-08-03-11:32:28:016 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [local-gateway-elected-state]: execute
+2015-08-03-11:32:28:029 - INFO  - Log4jESLogger - [Harker, Quincy] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.11.66.27:9200]}
+2015-08-03-11:32:28:029 - INFO  - Log4jESLogger - [Harker, Quincy] started
+2015-08-03-11:32:28:032 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2]: allocating [[mimos][2], node[null], [P], s[UNASSIGNED]] to [[Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]]] on primary allocation
+2015-08-03-11:32:28:033 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1]: allocating [[mimos][1], node[null], [P], s[UNASSIGNED]] to [[Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]]] on primary allocation
+2015-08-03-11:32:28:034 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0]: allocating [[mimos][0], node[null], [P], s[UNASSIGNED]] to [[Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]]] on primary allocation
+2015-08-03-11:32:28:035 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3]: allocating [[mimos][3], node[null], [P], s[UNASSIGNED]] to [[Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]]] on primary allocation
+2015-08-03-11:32:28:036 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4]: throttling allocation [[mimos][4], node[null], [P], s[UNASSIGNED]] to [[[Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]]]] on primary allocation
+2015-08-03-11:32:28:041 - TRACE - Log4jESLogger - [Harker, Quincy] Start balancing cluster
+2015-08-03-11:32:28:043 - TRACE - Log4jESLogger - [Harker, Quincy] Start distributing Shards
+2015-08-03-11:32:28:045 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:28:045 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:28:045 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:28:046 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:28:046 - TRACE - Log4jESLogger - [Harker, Quincy] Start allocating unassigned shards
+2015-08-03-11:32:28:047 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][0], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:28:047 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][1], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:28:048 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][2], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:28:048 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][3], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:28:048 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][4], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:28:049 - TRACE - Log4jESLogger - [Harker, Quincy] Start balancing cluster
+2015-08-03-11:32:28:049 - TRACE - Log4jESLogger - [Harker, Quincy] Start distributing Shards
+2015-08-03-11:32:28:050 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:28:050 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:28:050 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:28:050 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:28:052 - TRACE - Log4jESLogger - [Harker, Quincy] Start allocating unassigned shards
+2015-08-03-11:32:28:055 - TRACE - Log4jESLogger - [Harker, Quincy] cluster state updated:
+version [2], source [local-gateway-elected-state]
+nodes: 
+   [Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]], local, master
+routing_table:
+-- index [mimos]
+----shard_id [mimos][0]
+--------[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][0], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][1]
+--------[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][1], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][2]
+--------[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][2], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][3]
+--------[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][3], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][4]
+--------[mimos][4], node[null], [P], s[UNASSIGNED]
+--------[mimos][4], node[null], [R], s[UNASSIGNED]
+
+routing_nodes:
+-----node_id[GlwW0umuTBOtr0tlXH6OIg][V]
+--------[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+---- unassigned
+--------[mimos][0], node[null], [R], s[UNASSIGNED]
+--------[mimos][1], node[null], [R], s[UNASSIGNED]
+--------[mimos][2], node[null], [R], s[UNASSIGNED]
+--------[mimos][3], node[null], [R], s[UNASSIGNED]
+--------[mimos][4], node[null], [P], s[UNASSIGNED]
+--------[mimos][4], node[null], [R], s[UNASSIGNED]
+
+2015-08-03-11:32:28:056 - DEBUG - Log4jESLogger - [Harker, Quincy] Publishing cluster state version 2
+2015-08-03-11:32:28:058 - DEBUG - Log4jESLogger - [Harker, Quincy] Set cluster state to version 2. Broadcasting to listeners.
+2015-08-03-11:32:28:061 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [reroute_rivers_node_changed]: execute
+2015-08-03-11:32:28:062 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [reroute_rivers_node_changed]: no change in cluster_state
+2015-08-03-11:32:28:106 - TRACE - Log4jESLogger - [Harker, Quincy] primary shard [[mimos][2]] is not yet active or we do not know the node it is assigned to [GlwW0umuTBOtr0tlXH6OIg], scheduling a retry.
+2015-08-03-11:32:28:142 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] creating index
+2015-08-03-11:32:28:143 - DEBUG - Log4jESLogger - [Harker, Quincy] creating Index [mimos], shards [5]/[1]
+2015-08-03-11:32:29:138 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/home/filhan/.m2/repository/org/elasticsearch/elasticsearch/0.90.5/elasticsearch-0.90.5.jar!/org/elasticsearch/index/mapper/default-mapping.json]
+2015-08-03-11:32:29:139 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] using [resident] query cache with max_size [100], expire [null]
+2015-08-03-11:32:29:157 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+2015-08-03-11:32:29:384 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] adding mapping [Programmer], source [{"Programmer":{"properties":{"age":{"type":"string"},"author":{"type":"string"},"content":{"type":"string"},"id":{"type":"string"},"name":{"type":"string"},"postDate":{"type":"date","format":"dateOptionalTime"},"tags":{"type":"string"},"title":{"type":"string"}}}}]
+2015-08-03-11:32:29:465 - DEBUG - Log4jESLogger - [Harker, Quincy] Sending mapping created for index mimos, type Programmer
+2015-08-03-11:32:29:466 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] adding mapping [programmer], source [{"programmer":{"properties":{"age":{"type":"string"},"id":{"type":"string"},"name":{"type":"string"}}}}]
+2015-08-03-11:32:29:468 - DEBUG - Log4jESLogger - [Harker, Quincy] Sending mapping created for index mimos, type programmer
+2015-08-03-11:32:29:470 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] creating shard
+2015-08-03-11:32:29:470 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] creating shard_id [0]
+2015-08-03-11:32:29:657 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] Using [keep_only_last] deletion policy
+2015-08-03-11:32:29:659 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2015-08-03-11:32:29:660 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] using [concurrent] merge scheduler with max_thread_count[2]
+2015-08-03-11:32:29:664 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] state: [CREATED]
+2015-08-03-11:32:29:665 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2015-08-03-11:32:29:670 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+2015-08-03-11:32:29:671 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] creating shard
+2015-08-03-11:32:29:671 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] starting recovery from local ...
+2015-08-03-11:32:29:671 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] creating shard_id [1]
+2015-08-03-11:32:29:710 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][0] using existing shard data, translog id [1430291139236]
+2015-08-03-11:32:29:710 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] starting engine
+2015-08-03-11:32:29:746 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] Using [keep_only_last] deletion policy
+2015-08-03-11:32:29:747 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2015-08-03-11:32:29:748 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] using [concurrent] merge scheduler with max_thread_count[2]
+2015-08-03-11:32:29:748 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] state: [CREATED]
+2015-08-03-11:32:29:749 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2015-08-03-11:32:29:750 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] state: [CREATED]->[RECOVERING], reason [from gateway]
+2015-08-03-11:32:29:750 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] starting recovery from local ...
+2015-08-03-11:32:29:751 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] creating shard
+2015-08-03-11:32:29:751 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] creating shard_id [2]
+2015-08-03-11:32:29:818 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][1] using existing shard data, translog id [1430291139236]
+2015-08-03-11:32:29:819 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] starting engine
+2015-08-03-11:32:29:823 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][0] warming [StandardDirectoryReader(segments_1:1:nrt)], new [StandardDirectoryReader(segments_1:1:nrt)]
+2015-08-03-11:32:29:824 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][1] warming [StandardDirectoryReader(segments_1:1:nrt)], new [StandardDirectoryReader(segments_1:1:nrt)]
+2015-08-03-11:32:29:825 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][1] warming took [401.2micros]
+2015-08-03-11:32:29:826 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][0] warming took [2.5ms]
+2015-08-03-11:32:29:829 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] state: [RECOVERING]->[STARTED], reason [post recovery]
+2015-08-03-11:32:29:829 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] state: [RECOVERING]->[STARTED], reason [post recovery]
+2015-08-03-11:32:29:830 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] scheduling refresher every 1s
+2015-08-03-11:32:29:830 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] scheduling refresher every 1s
+2015-08-03-11:32:29:831 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] scheduling optimizer / merger every 1s
+2015-08-03-11:32:29:831 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] scheduling optimizer / merger every 1s
+2015-08-03-11:32:29:832 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][1] refresh with force[true]
+2015-08-03-11:32:29:832 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][1] recovery completed from [local], took [82ms]
+2015-08-03-11:32:29:832 - DEBUG - Log4jESLogger - [Harker, Quincy] sending shard started for [mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:29:833 - DEBUG - Log4jESLogger - [Harker, Quincy] received shard started for [mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:29:832 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][0] refresh with force[true]
+2015-08-03-11:32:29:835 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][0] recovery completed from [local], took [163ms]
+2015-08-03-11:32:29:835 - DEBUG - Log4jESLogger - [Harker, Quincy] sending shard started for [mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:29:836 - DEBUG - Log4jESLogger - [Harker, Quincy] received shard started for [mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:29:937 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] Using [keep_only_last] deletion policy
+2015-08-03-11:32:29:938 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2015-08-03-11:32:29:938 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] using [concurrent] merge scheduler with max_thread_count[2]
+2015-08-03-11:32:29:940 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] state: [CREATED]
+2015-08-03-11:32:29:940 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2015-08-03-11:32:29:941 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] state: [CREATED]->[RECOVERING], reason [from gateway]
+2015-08-03-11:32:29:942 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] creating shard
+2015-08-03-11:32:29:942 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] creating shard_id [3]
+2015-08-03-11:32:29:942 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] starting recovery from local ...
+2015-08-03-11:32:29:992 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] Using [keep_only_last] deletion policy
+2015-08-03-11:32:29:993 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2015-08-03-11:32:29:993 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] using [concurrent] merge scheduler with max_thread_count[2]
+2015-08-03-11:32:29:994 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] state: [CREATED]
+2015-08-03-11:32:29:994 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2015-08-03-11:32:29:995 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] state: [CREATED]->[RECOVERING], reason [from gateway]
+2015-08-03-11:32:29:996 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] starting recovery from local ...
+2015-08-03-11:32:30:000 - TRACE - Log4jESLogger - [Harker, Quincy] [_global] writing state, reason [changed]
+2015-08-03-11:32:30:006 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] using existing shard data, translog id [1430291139237]
+2015-08-03-11:32:30:082 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] starting engine
+2015-08-03-11:32:30:114 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] using existing shard data, translog id [1430291139237]
+2015-08-03-11:32:30:115 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] starting engine
+2015-08-03-11:32:30:127 - INFO  - Log4jESLogger - [Harker, Quincy] recovered [1] indices into cluster_state
+2015-08-03-11:32:30:128 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [local-gateway-elected-state]: done applying updated cluster_state (version: 2)
+2015-08-03-11:32:30:128 - TRACE - Log4jESLogger - [Harker, Quincy] listener to cluster state added, trying to index again
+2015-08-03-11:32:30:129 - TRACE - Log4jESLogger - [Harker, Quincy] primary shard [[mimos][2]] is not yet active or we do not know the node it is assigned to [GlwW0umuTBOtr0tlXH6OIg], scheduling a retry.
+2015-08-03-11:32:30:129 - TRACE - Log4jESLogger - [Harker, Quincy] retry scheduling ignored as it as we already have a listener in place
+2015-08-03-11:32:30:129 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2015-08-03-11:32:30:130 - DEBUG - Log4jESLogger - [Harker, Quincy] applying started shards [[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], [mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]], reason [after recovery from gateway]
+2015-08-03-11:32:30:131 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4]: allocating [[mimos][4], node[null], [P], s[UNASSIGNED]] to [[Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]]] on primary allocation
+2015-08-03-11:32:30:131 - TRACE - Log4jESLogger - [Harker, Quincy] Start balancing cluster
+2015-08-03-11:32:30:132 - TRACE - Log4jESLogger - [Harker, Quincy] Start distributing Shards
+2015-08-03-11:32:30:132 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:132 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:132 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:133 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:133 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:133 - TRACE - Log4jESLogger - [Harker, Quincy] Start allocating unassigned shards
+2015-08-03-11:32:30:133 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][0], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:133 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][1], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:134 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][2], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:134 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][3], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:134 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][4], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:135 - TRACE - Log4jESLogger - [Harker, Quincy] Start balancing cluster
+2015-08-03-11:32:30:135 - TRACE - Log4jESLogger - [Harker, Quincy] Start distributing Shards
+2015-08-03-11:32:30:136 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:136 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:136 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:136 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:136 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:137 - TRACE - Log4jESLogger - [Harker, Quincy] Start allocating unassigned shards
+2015-08-03-11:32:30:137 - TRACE - Log4jESLogger - [Harker, Quincy] cluster state updated:
+version [3], source [shard-started ([mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+nodes: 
+   [Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]], local, master
+routing_table:
+-- index [mimos]
+----shard_id [mimos][0]
+--------[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][0], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][1]
+--------[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][1], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][2]
+--------[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][2], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][3]
+--------[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][3], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][4]
+--------[mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][4], node[null], [R], s[UNASSIGNED]
+
+routing_nodes:
+-----node_id[GlwW0umuTBOtr0tlXH6OIg][V]
+--------[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+--------[mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]
+---- unassigned
+--------[mimos][0], node[null], [R], s[UNASSIGNED]
+--------[mimos][1], node[null], [R], s[UNASSIGNED]
+--------[mimos][2], node[null], [R], s[UNASSIGNED]
+--------[mimos][3], node[null], [R], s[UNASSIGNED]
+--------[mimos][4], node[null], [R], s[UNASSIGNED]
+
+2015-08-03-11:32:30:138 - DEBUG - Log4jESLogger - [Harker, Quincy] Publishing cluster state version 3
+2015-08-03-11:32:30:138 - DEBUG - Log4jESLogger - [Harker, Quincy] Set cluster state to version 3. Broadcasting to listeners.
+2015-08-03-11:32:30:138 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [reroute_rivers_node_changed]: execute
+2015-08-03-11:32:30:139 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [reroute_rivers_node_changed]: no change in cluster_state
+2015-08-03-11:32:30:147 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] creating shard
+2015-08-03-11:32:30:147 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos] creating shard_id [4]
+2015-08-03-11:32:30:183 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] Using [keep_only_last] deletion policy
+2015-08-03-11:32:30:183 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2015-08-03-11:32:30:184 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] using [concurrent] merge scheduler with max_thread_count[2]
+2015-08-03-11:32:30:184 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] state: [CREATED]
+2015-08-03-11:32:30:185 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2015-08-03-11:32:30:186 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] state: [CREATED]->[RECOVERING], reason [from gateway]
+2015-08-03-11:32:30:205 - TRACE - Log4jESLogger - [Harker, Quincy] cluster changed (version 3), trying to index again
+2015-08-03-11:32:30:206 - TRACE - Log4jESLogger - [Harker, Quincy] primary shard [[mimos][2]] is not yet active or we do not know the node it is assigned to [GlwW0umuTBOtr0tlXH6OIg], scheduling a retry.
+2015-08-03-11:32:30:206 - TRACE - Log4jESLogger - [Harker, Quincy] retry scheduling ignored as it as we already have a listener in place
+2015-08-03-11:32:30:206 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] starting recovery from local ...
+2015-08-03-11:32:30:207 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][0] writing shard state, reason [version changed from [72] to [74]]
+2015-08-03-11:32:30:213 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] using existing shard data, translog id [1430291139428]
+2015-08-03-11:32:30:213 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] starting engine
+2015-08-03-11:32:30:332 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][1] writing shard state, reason [version changed from [58] to [60]]
+2015-08-03-11:32:30:337 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] warming [StandardDirectoryReader(segments_2:3:nrt _0(4.4):c1)], new [StandardDirectoryReader(segments_2:3:nrt _0(4.4):c1)]
+2015-08-03-11:32:30:337 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] warming [StandardDirectoryReader(segments_2:3:nrt _0(4.4):c1)], new [StandardDirectoryReader(segments_2:3:nrt _0(4.4):c1)]
+2015-08-03-11:32:30:337 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] warming [StandardDirectoryReader(segments_2:3:nrt _0(4.4):c1)], new [StandardDirectoryReader(segments_2:3:nrt _0(4.4):c1)]
+2015-08-03-11:32:30:338 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] warming took [89.1micros]
+2015-08-03-11:32:30:338 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] warming took [121.9micros]
+2015-08-03-11:32:30:339 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] warming took [78.4micros]
+2015-08-03-11:32:30:340 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] state: [RECOVERING]->[STARTED], reason [post recovery]
+2015-08-03-11:32:30:340 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] state: [RECOVERING]->[STARTED], reason [post recovery]
+2015-08-03-11:32:30:340 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] state: [RECOVERING]->[STARTED], reason [post recovery]
+2015-08-03-11:32:30:341 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] scheduling refresher every 1s
+2015-08-03-11:32:30:341 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] scheduling refresher every 1s
+2015-08-03-11:32:30:341 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] scheduling optimizer / merger every 1s
+2015-08-03-11:32:30:341 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] scheduling refresher every 1s
+2015-08-03-11:32:30:342 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] refresh with force[true]
+2015-08-03-11:32:30:342 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] scheduling optimizer / merger every 1s
+2015-08-03-11:32:30:342 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][3] recovery completed from [local], took [346ms]
+2015-08-03-11:32:30:342 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] scheduling optimizer / merger every 1s
+2015-08-03-11:32:30:343 - DEBUG - Log4jESLogger - [Harker, Quincy] sending shard started for [mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:30:342 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] refresh with force[true]
+2015-08-03-11:32:30:343 - DEBUG - Log4jESLogger - [Harker, Quincy] received shard started for [mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:30:343 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] refresh with force[true]
+2015-08-03-11:32:30:343 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][2] recovery completed from [local], took [401ms]
+2015-08-03-11:32:30:343 - DEBUG - Log4jESLogger - [Harker, Quincy] [mimos][4] recovery completed from [local], took [137ms]
+2015-08-03-11:32:30:344 - DEBUG - Log4jESLogger - [Harker, Quincy] sending shard started for [mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:30:344 - DEBUG - Log4jESLogger - [Harker, Quincy] sending shard started for [mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:30:344 - DEBUG - Log4jESLogger - [Harker, Quincy] received shard started for [mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:30:344 - DEBUG - Log4jESLogger - [Harker, Quincy] received shard started for [mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], reason [after recovery from gateway]
+2015-08-03-11:32:30:383 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 3)
+2015-08-03-11:32:30:383 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2015-08-03-11:32:30:383 - DEBUG - Log4jESLogger - [Harker, Quincy] applying started shards [[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], [mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING], [mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]], reason [after recovery from gateway]
+2015-08-03-11:32:30:384 - TRACE - Log4jESLogger - [Harker, Quincy] Start balancing cluster
+2015-08-03-11:32:30:384 - TRACE - Log4jESLogger - [Harker, Quincy] Start distributing Shards
+2015-08-03-11:32:30:384 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:384 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:385 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:385 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:385 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:385 - TRACE - Log4jESLogger - [Harker, Quincy] Start allocating unassigned shards
+2015-08-03-11:32:30:385 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][0], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:385 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][1], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:385 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][2], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:386 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][3], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:386 - TRACE - Log4jESLogger - [Harker, Quincy] No Node found to assign shard [[mimos][4], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:30:386 - TRACE - Log4jESLogger - [Harker, Quincy] Start balancing cluster
+2015-08-03-11:32:30:386 - TRACE - Log4jESLogger - [Harker, Quincy] Start distributing Shards
+2015-08-03-11:32:30:386 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:386 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:387 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:387 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:387 - TRACE - Log4jESLogger - [Harker, Quincy] Assigned shard [[mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]] to node [GlwW0umuTBOtr0tlXH6OIg]
+2015-08-03-11:32:30:387 - TRACE - Log4jESLogger - [Harker, Quincy] Start allocating unassigned shards
+2015-08-03-11:32:30:388 - TRACE - Log4jESLogger - [Harker, Quincy] cluster state updated:
+version [4], source [shard-started ([mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+nodes: 
+   [Harker, Quincy][GlwW0umuTBOtr0tlXH6OIg][inet[/10.11.66.27:9300]], local, master
+routing_table:
+-- index [mimos]
+----shard_id [mimos][0]
+--------[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][0], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][1]
+--------[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][1], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][2]
+--------[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][2], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][3]
+--------[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][3], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][4]
+--------[mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][4], node[null], [R], s[UNASSIGNED]
+
+routing_nodes:
+-----node_id[GlwW0umuTBOtr0tlXH6OIg][V]
+--------[mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][1], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+--------[mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[STARTED]
+---- unassigned
+--------[mimos][0], node[null], [R], s[UNASSIGNED]
+--------[mimos][1], node[null], [R], s[UNASSIGNED]
+--------[mimos][2], node[null], [R], s[UNASSIGNED]
+--------[mimos][3], node[null], [R], s[UNASSIGNED]
+--------[mimos][4], node[null], [R], s[UNASSIGNED]
+
+2015-08-03-11:32:30:388 - DEBUG - Log4jESLogger - [Harker, Quincy] Publishing cluster state version 4
+2015-08-03-11:32:30:388 - DEBUG - Log4jESLogger - [Harker, Quincy] Set cluster state to version 4. Broadcasting to listeners.
+2015-08-03-11:32:30:388 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [reroute_rivers_node_changed]: execute
+2015-08-03-11:32:30:390 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [reroute_rivers_node_changed]: no change in cluster_state
+2015-08-03-11:32:30:390 - TRACE - Log4jESLogger - [Harker, Quincy] cluster changed (version 4), trying to index again
+2015-08-03-11:32:30:392 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] writing shard state, reason [version changed from [74] to [76]]
+2015-08-03-11:32:30:409 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] index [Document<stored,indexed,omitNorms<_uid:> stored<_source:[7b 22 61 75 74 68 6f 72 22 3a 22 31 22 2c 22 70 6f 73 74 44 61 74 65 22 3a 22 32 30 31 35 2d 30 38 2d 30 33 54 30 33 3a 33 32 3a 32 38 2e 30 39 34 5a 22 2c 22 74 69 74 6c 65 22 3a 22 4d 69 2d 72 65 73 74 6e 6f 73 71 6c 22 2c 22 63 6f 6e 74 65 6e 74 22 3a 22 63 6f 64 65 20 6f 70 74 69 6d 69 7a 61 74 69 6f 6e 22 2c 22 74 61 67 73 22 3a 5b 22 65 6c 61 73 74 69 63 73 65 61 72 63 68 22 5d 7d]> indexed,omitNorms,indexOptions=DOCS_ONLY<_type:Programmer> indexed,tokenized<author:1> indexed,omitNorms,indexOptions=DOCS_ONLY<postDate:1438572748094> indexed,tokenized<title:Mi-restnosql> indexed,tokenized<content:code optimization> indexed,tokenized<tags:elasticsearch> indexed,tokenized<_all:>>]
+2015-08-03-11:32:30:442 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] writing shard state, reason [version changed from [72] to [74]]
+2015-08-03-11:32:30:466 - DEBUG - Log4jESLogger - [Harker, Quincy] Sending mapping updated to master: index [mimos] type [Programmer]
+2015-08-03-11:32:30:567 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] writing shard state, reason [version changed from [62] to [64]]
+2015-08-03-11:32:30:635 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][0], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 4)
+2015-08-03-11:32:30:635 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2015-08-03-11:32:30:635 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][3], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2015-08-03-11:32:30:635 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2015-08-03-11:32:30:635 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][2], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2015-08-03-11:32:30:635 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2015-08-03-11:32:30:635 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [shard-started ([mimos][4], node[GlwW0umuTBOtr0tlXH6OIg], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2015-08-03-11:32:30:636 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [update-mapping [mimos][Programmer]]: execute
+2015-08-03-11:32:30:637 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [update-mapping [mimos][Programmer]]: no change in cluster_state
+2015-08-03-11:32:30:903 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] index [Document<stored,indexed,omitNorms<_uid:> stored<_source:[7b 22 6e 61 6d 65 22 3a 22 7a 75 62 69 72 22 2c 22 69 64 22 3a 22 32 33 33 34 35 33 34 22 2c 22 61 67 65 22 3a 22 31 31 22 7d]> indexed,omitNorms,indexOptions=DOCS_ONLY<_type:Programmer> indexed,tokenized<name:zubir> indexed,tokenized<id:2334534> indexed,tokenized<age:11> indexed,tokenized<_all:>>]
+2015-08-03-11:32:30:907 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] index [Document<stored,indexed,omitNorms<_uid:> stored<_source:[7b 22 6e 61 6d 65 22 3a 22 6b 6f 6b 6f 22 2c 22 69 64 22 3a 22 30 30 30 39 39 22 2c 22 61 67 65 22 3a 22 30 38 22 7d]> indexed,omitNorms,indexOptions=DOCS_ONLY<_type:Programmer> indexed,tokenized<name:koko> indexed,tokenized<id:00099> indexed,tokenized<age:08> indexed,tokenized<_all:>>]
+2015-08-03-11:32:30:913 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] index [Document<stored,indexed,omitNorms<_uid:> stored<_source:[7b 22 6e 61 6d 65 22 3a 22 70 65 61 6e 22 2c 22 69 64 22 3a 22 31 38 35 36 32 22 2c 22 61 67 65 22 3a 22 32 31 22 7d]> indexed,omitNorms,indexOptions=DOCS_ONLY<_type:programmer> indexed,tokenized<name:pean> indexed,tokenized<id:18562> indexed,tokenized<age:21> indexed,tokenized<_all:>>]
+2015-08-03-11:32:30:924 - DEBUG - Log4jESLogger - [Harker, Quincy] Sending mapping updated to master: index [mimos] type [programmer]
+2015-08-03-11:32:30:925 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [update-mapping [mimos][programmer]]: execute
+2015-08-03-11:32:30:925 - DEBUG - Log4jESLogger - [Harker, Quincy] processing [update-mapping [mimos][programmer]]: no change in cluster_state
+2015-08-03-11:32:30:926 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] index [Document<stored,indexed,omitNorms<_uid:> stored<_source:[7b 22 6e 61 6d 65 22 3a 22 7a 75 62 69 72 22 2c 22 69 64 22 3a 22 32 33 33 34 35 33 34 22 2c 22 61 67 65 22 3a 22 31 31 22 7d]> indexed,omitNorms,indexOptions=DOCS_ONLY<_type:programmer> indexed,tokenized<name:zubir> indexed,tokenized<id:2334534> indexed,tokenized<age:11> indexed,tokenized<_all:>>]
+2015-08-03-11:32:30:929 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] index [Document<stored,indexed,omitNorms<_uid:> stored<_source:[7b 22 6e 61 6d 65 22 3a 22 6b 6f 6b 6f 22 2c 22 69 64 22 3a 22 30 30 30 39 39 22 2c 22 61 67 65 22 3a 22 30 38 22 7d]> indexed,omitNorms,indexOptions=DOCS_ONLY<_type:programmer> indexed,tokenized<name:koko> indexed,tokenized<id:00099> indexed,tokenized<age:08> indexed,tokenized<_all:>>]
+2015-08-03-11:32:31:027 - TRACE - Log4jESLogger - [Harker, Quincy] Moving to second phase, based on results from: [GlwW0umuTBOtr0tlXH6OIg][mimos][0],[GlwW0umuTBOtr0tlXH6OIg][mimos][4],[GlwW0umuTBOtr0tlXH6OIg][mimos][3],[GlwW0umuTBOtr0tlXH6OIg][mimos][2],[GlwW0umuTBOtr0tlXH6OIg][mimos][1] (cluster state version: 4)
+2015-08-03-11:32:31:050 - TRACE - Log4jESLogger - [Harker, Quincy] Moving to second phase, based on results from: [GlwW0umuTBOtr0tlXH6OIg][mimos][0],[GlwW0umuTBOtr0tlXH6OIg][mimos][4],[GlwW0umuTBOtr0tlXH6OIg][mimos][3],[GlwW0umuTBOtr0tlXH6OIg][mimos][2],[GlwW0umuTBOtr0tlXH6OIg][mimos][1] (cluster state version: 4)
+2015-08-03-11:32:31:054 - INFO  - Log4jESLogger - [Araña] version[0.90.5], pid[8253], build[c8714e8/2013-09-17T12:50:20Z]
+2015-08-03-11:32:31:055 - INFO  - Log4jESLogger - [Araña] initializing ...
+2015-08-03-11:32:31:055 - DEBUG - Log4jESLogger - [Araña] using home [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated], config [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/config], data [[/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/data]], logs [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/logs], work [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/work], plugins [/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/plugins]
+2015-08-03-11:32:31:056 - INFO  - Log4jESLogger - [Araña] loaded [], sites []
+2015-08-03-11:32:31:071 - TRACE - Log4jESLogger - [Araña] obtaining node lock on /home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/data/kodcu/nodes/0 ...
+2015-08-03-11:32:31:072 - DEBUG - Log4jESLogger - [Araña] using node location [[/home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/data/kodcu/nodes/0]], local_node_id [0]
+2015-08-03-11:32:31:072 - TRACE - Log4jESLogger - [Araña] node data locations details:
+ -> /home/filhan/WKSPC/wkspc-orm/ElasticSearchUpdated/data/kodcu/nodes/0, free_space [70gb], usable_space [64.8gb]
+
+2015-08-03-11:32:31:105 - TRACE - Log4jESLogger - [Araña] sigar loaded successfully
+2015-08-03-11:32:31:154 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [generic], type [cached], keep_alive [30s]
+2015-08-03-11:32:31:154 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [index], type [fixed], size [4], queue_size [null]
+2015-08-03-11:32:31:155 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [bulk], type [fixed], size [4], queue_size [null]
+2015-08-03-11:32:31:156 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [get], type [fixed], size [4], queue_size [null]
+2015-08-03-11:32:31:156 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [search], type [fixed], size [12], queue_size [1k]
+2015-08-03-11:32:31:156 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
+2015-08-03-11:32:31:156 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
+2015-08-03-11:32:31:156 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
+2015-08-03-11:32:31:156 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:31:157 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [merge], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:31:157 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:31:157 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:31:157 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
+2015-08-03-11:32:31:157 - DEBUG - Log4jESLogger - [Araña] creating thread_pool [optimize], type [fixed], size [1], queue_size [null]
+2015-08-03-11:32:31:160 - DEBUG - Log4jESLogger - [Araña] using worker_count[8], port[9300-9400], bind_host[null], publish_host[null], compress[false], connect_timeout[30s], connections_per_node[2/6/1/1], receive_predictor[512kb->512kb]
+2015-08-03-11:32:31:161 - DEBUG - Log4jESLogger - [Araña] using group [224.2.2.4], with port [54328], ttl [3], and address [null]
+2015-08-03-11:32:31:162 - DEBUG - Log4jESLogger - [Araña] using initial hosts [], with concurrent_connects [10]
+2015-08-03-11:32:31:162 - DEBUG - Log4jESLogger - [Araña] using ping.timeout [3s], master_election.filter_client [true], master_election.filter_data [false]
+2015-08-03-11:32:31:162 - DEBUG - Log4jESLogger - [Araña] using minimum_master_nodes [-1]
+2015-08-03-11:32:31:163 - DEBUG - Log4jESLogger - [Araña] [master] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2015-08-03-11:32:31:163 - DEBUG - Log4jESLogger - [Araña] [node  ] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2015-08-03-11:32:31:170 - DEBUG - Log4jESLogger - [Araña] enabled [true], last_gc_enabled [false], interval [1s], gc_threshold [{ParNew=GcThreshold{name='ParNew', warnThreshold=1000, infoThreshold=700, debugThreshold=400}, default=GcThreshold{name='default', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, ConcurrentMarkSweep=GcThreshold{name='ConcurrentMarkSweep', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}}]
+2015-08-03-11:32:31:342 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] refresh with force[false]
+2015-08-03-11:32:31:347 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] refresh with force[false]
+2015-08-03-11:32:31:459 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] warming [StandardDirectoryReader(segments_2:7:nrt _1(4.4):c2)], new [MultiReader(_1(4.4):c2)]
+2015-08-03-11:32:31:459 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] warming [StandardDirectoryReader(segments_2:7:nrt _1(4.4):c2)], new [MultiReader(_1(4.4):c2)]
+2015-08-03-11:32:31:460 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][2] warming took [119.6micros]
+2015-08-03-11:32:31:461 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][3] warming took [840.1micros]
+2015-08-03-11:32:31:464 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] refresh with force[false]
+2015-08-03-11:32:31:496 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] warming [StandardDirectoryReader(segments_2:7:nrt _1(4.4):c2)], new [MultiReader(_1(4.4):c2)]
+2015-08-03-11:32:31:497 - TRACE - Log4jESLogger - [Harker, Quincy] [mimos][4] warming took [135.8micros]
+2015-08-03-11:32:31:672 - DEBUG - Log4jESLogger - [Araña] Using probe [org.elasticsearch.monitor.os.SigarOsProbe@5b22d8a1] with refresh_interval [1s]
+2015-08-03-11:32:31:673 - DEBUG - Log4jESLogger - [Araña] Using probe [org.elasticsearch.monitor.process.SigarProcessProbe@7cd4a4d7] with refresh_interval [1s]
+2015-08-03-11:32:31:674 - DEBUG - Log4jESLogger - [Araña] Using refresh_interval [1s]
+2015-08-03-11:32:31:674 - DEBUG - Log4jESLogger - [Araña] Using probe [org.elasticsearch.monitor.network.SigarNetworkProbe@68880c21] with refresh_interval [5s]
+2015-08-03-11:32:31:675 - DEBUG - Log4jESLogger - [Araña] net_info
+host [khairul-OptiPlex-760]
+virbr0	display_name [virbr0]
+		address [/192.168.122.1] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+vmnet8	display_name [vmnet8]
+		address [/fe80:0:0:0:250:56ff:fec0:8%vmnet8] [/192.168.25.1] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+vmnet1	display_name [vmnet1]
+		address [/fe80:0:0:0:250:56ff:fec0:1%vmnet1] [/192.168.75.1] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+eth0	display_name [eth0]
+		address [/fe80:0:0:0:223:aeff:fe8a:d666%eth0] [/2407:4000:4:366:51da:cf4e:5792:5757%eth0] [/2407:4000:4:366:223:aeff:fe8a:d666%eth0] [/10.11.66.27] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+lo	display_name [lo]
+		address [/0:0:0:0:0:0:0:1%lo] [/127.0.0.1] 
+		mtu [65536] multicast [false] ptp [false] loopback [true] up [true] virtual [false]
+
+2015-08-03-11:32:31:676 - TRACE - Log4jESLogger - [Araña] ifconfig
+
+lo	Link encap:Local Loopback
+	inet addr:127.0.0.1  Mask:255.0.0.0
+	UP LOOPBACK RUNNING  MTU:65536  Metric:1
+	RX packets:5676 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:5676 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:608923 (595K)  TX bytes:608923 (595K)
+eth0	Link encap:Ethernet HWaddr 00:23:AE:8A:D6:66
+	inet addr:10.11.66.27  Bcast:10.11.66.255  Mask:255.255.255.0
+	UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	RX packets:385363 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:184306 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:408123380 (389M)  TX bytes:25139584 ( 24M)
+vmnet1	Link encap:Ethernet HWaddr 00:50:56:C0:00:01
+	inet addr:192.168.75.1  Bcast:192.168.75.255  Mask:255.255.255.0
+	UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:137 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:0 (  0 )  TX bytes:0 (  0 )
+vmnet8	Link encap:Ethernet HWaddr 00:50:56:C0:00:08
+	inet addr:192.168.25.1  Bcast:192.168.25.255  Mask:255.255.255.0
+	UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:137 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:0 (  0 )  TX bytes:0 (  0 )
+virbr0	Link encap:Ethernet HWaddr BE:F8:B9:C9:06:59
+	inet addr:192.168.122.1  Bcast:192.168.122.255  Mask:255.255.255.0
+	UP BROADCAST MULTICAST  MTU:1500  Metric:1
+	RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+	TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+	collisions:0
+	RX bytes:0 (  0 )  TX bytes:0 (  0 )
+
+2015-08-03-11:32:31:679 - DEBUG - Log4jESLogger - [Araña] Using probe [org.elasticsearch.monitor.fs.SigarFsProbe@6f3e19b3] with refresh_interval [1s]
+2015-08-03-11:32:31:681 - DEBUG - Log4jESLogger - [Araña] using indices.store.throttle.type [MERGE], with index.store.throttle.max_bytes_per_sec [20mb]
+2015-08-03-11:32:31:682 - DEBUG - Log4jESLogger - [Araña] using bytebuffer cache with small_buffer_size [1kb], large_buffer_size [1mb], small_cache_size [10mb], large_cache_size [500mb], direct [true]
+2015-08-03-11:32:31:683 - DEBUG - Log4jESLogger - [Araña] using script cache with max_size [500], expire [null]
+2015-08-03-11:32:31:684 - DEBUG - Log4jESLogger - [Araña] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2015-08-03-11:32:31:684 - DEBUG - Log4jESLogger - [Araña] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2015-08-03-11:32:31:685 - DEBUG - Log4jESLogger - [Araña] using [cluster_concurrent_rebalance] with [2]
+2015-08-03-11:32:31:686 - DEBUG - Log4jESLogger - [Araña] using initial_shards [quorum], list_timeout [30s]
+2015-08-03-11:32:31:690 - DEBUG - Log4jESLogger - [Araña] using max_bytes_per_sec[20mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+2015-08-03-11:32:31:697 - DEBUG - Log4jESLogger - [Araña] using max_chunk_size[8kb], max_header_size[8kb], max_initial_line_length[4kb], max_content_length[100mb], receive_predictor[512kb->512kb]
+2015-08-03-11:32:31:698 - DEBUG - Log4jESLogger - [Araña] using index_buffer_size [273mb], with min_shard_index_buffer_size [4mb], max_shard_index_buffer_size [512mb], shard_inactive_time [30m]
+2015-08-03-11:32:31:699 - DEBUG - Log4jESLogger - [Araña] using [node] weighted filter cache with size [20%], actual_size [546.1mb], expire [null], clean_interval [1m]
+2015-08-03-11:32:31:706 - DEBUG - Log4jESLogger - [Araña] using size [-1] [-1b], expire [null]
+2015-08-03-11:32:31:708 - DEBUG - Log4jESLogger - [Araña] using gateway.local.auto_import_dangled [YES], with gateway.local.dangling_timeout [2h]
+2015-08-03-11:32:31:709 - TRACE - Log4jESLogger - [Araña] [upgrade]: processing [global-18]
+2015-08-03-11:32:31:755 - DEBUG - Log4jESLogger - [Araña] took 46ms to load state
+2015-08-03-11:32:31:756 - TRACE - Log4jESLogger - [Araña] [find_latest_state]: processing [global-18]
+2015-08-03-11:32:31:776 - DEBUG - Log4jESLogger - [Araña] took 20ms to load started shards state
+2015-08-03-11:32:31:777 - DEBUG - Log4jESLogger - [Araña] using enabled [false], host [null], port [9700-9800], bulk_actions [1000], bulk_size [5mb], flush_interval [5s], concurrent_requests [4]
+2015-08-03-11:32:31:779 - DEBUG - Log4jESLogger - [Araña] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2015-08-03-11:32:31:779 - DEBUG - Log4jESLogger - [Araña] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2015-08-03-11:32:31:779 - DEBUG - Log4jESLogger - [Araña] using [cluster_concurrent_rebalance] with [2]
+2015-08-03-11:32:31:780 - DEBUG - Log4jESLogger - [Araña] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2015-08-03-11:32:31:780 - DEBUG - Log4jESLogger - [Araña] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2015-08-03-11:32:31:781 - DEBUG - Log4jESLogger - [Araña] using [cluster_concurrent_rebalance] with [2]
+2015-08-03-11:32:31:784 - INFO  - Log4jESLogger - [Araña] initialized
+2015-08-03-11:32:31:785 - INFO  - Log4jESLogger - [Araña] starting ...
+2015-08-03-11:32:31:801 - DEBUG - Log4jESLogger - [Araña] Bound to address [/0:0:0:0:0:0:0:0:9301]
+2015-08-03-11:32:31:802 - INFO  - Log4jESLogger - [Araña] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/10.11.66.27:9301]}
+2015-08-03-11:32:31:807 - TRACE - Log4jESLogger - [Araña] waiting for 30s for the initial state to be set by the discovery
+2015-08-03-11:32:31:816 - TRACE - Log4jESLogger - [Araña] [1] sending ping request
+2015-08-03-11:32:31:816 - TRACE - Log4jESLogger - [Harker, Quincy] [1] received ping_request from [[Araña][ocKLzTXiS4S_yw7h-7QPWg][inet[/10.11.66.27:9301]]], but wrong cluster_name [Cluster [kodcu]], expected [Cluster [peansData]], ignoring
+2015-08-03-11:32:33:319 - TRACE - Log4jESLogger - [Harker, Quincy] [1] received ping_request from [[Araña][ocKLzTXiS4S_yw7h-7QPWg][inet[/10.11.66.27:9301]]], but wrong cluster_name [Cluster [kodcu]], expected [Cluster [peansData]], ignoring
+2015-08-03-11:32:33:319 - TRACE - Log4jESLogger - [Araña] [1] sending ping request
+2015-08-03-11:32:34:821 - TRACE - Log4jESLogger - [Araña] full ping responses: {none}
+2015-08-03-11:32:34:821 - DEBUG - Log4jESLogger - [Araña] filtered ping responses: (filter_client[true], filter_data[false]) {none}
+2015-08-03-11:32:34:822 - DEBUG - Log4jESLogger - [Araña] processing [zen-disco-join (elected_as_master)]: execute
+2015-08-03-11:32:34:822 - TRACE - Log4jESLogger - [Araña] cluster state updated:
+version [1], source [zen-disco-join (elected_as_master)]
+nodes: 
+   [Araña][ocKLzTXiS4S_yw7h-7QPWg][inet[/10.11.66.27:9301]], local, master
+routing_table:
+routing_nodes:
+-----node_id[ocKLzTXiS4S_yw7h-7QPWg][V]
+---- unassigned
+
+2015-08-03-11:32:34:822 - INFO  - Log4jESLogger - [Araña] new_master [Araña][ocKLzTXiS4S_yw7h-7QPWg][inet[/10.11.66.27:9301]], reason: zen-disco-join (elected_as_master)
+2015-08-03-11:32:34:823 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0xbc50c5a2, /10.11.66.27:44974 => /10.11.66.27:9301]
+2015-08-03-11:32:34:824 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0xee238578, /10.11.66.27:44975 => /10.11.66.27:9301]
+2015-08-03-11:32:34:824 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0xb9848783, /10.11.66.27:44976 => /10.11.66.27:9301]
+2015-08-03-11:32:34:826 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0x61cbbb85, /10.11.66.27:44977 => /10.11.66.27:9301]
+2015-08-03-11:32:34:826 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0x5f9ae6f6, /10.11.66.27:44978 => /10.11.66.27:9301]
+2015-08-03-11:32:34:828 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0xb0500cc4, /10.11.66.27:44979 => /10.11.66.27:9301]
+2015-08-03-11:32:34:828 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0xf2382855, /10.11.66.27:44980 => /10.11.66.27:9301]
+2015-08-03-11:32:34:829 - DEBUG - Log4jESLogger - [Araña] connected to node [[Araña][ocKLzTXiS4S_yw7h-7QPWg][inet[/10.11.66.27:9301]]]
+2015-08-03-11:32:34:829 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0x55ed6055, /10.11.66.27:44981 => /10.11.66.27:9301]
+2015-08-03-11:32:34:830 - DEBUG - Log4jESLogger - [Araña] Publishing cluster state version 1
+2015-08-03-11:32:34:830 - DEBUG - Log4jESLogger - [Araña] Set cluster state to version 1. Broadcasting to listeners.
+2015-08-03-11:32:34:830 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0x5511f68f, /10.11.66.27:44982 => /10.11.66.27:9301]
+2015-08-03-11:32:34:831 - TRACE - Log4jESLogger - [Araña] channel opened: [id: 0x6c295edf, /10.11.66.27:44983 => /10.11.66.27:9301]
+2015-08-03-11:32:34:832 - DEBUG - Log4jESLogger - [Araña] processing [zen-disco-join (elected_as_master)]: done applying updated cluster_state (version: 1)
+2015-08-03-11:32:34:831 - DEBUG - Log4jESLogger - [Araña] processing [reroute_rivers_node_changed]: execute
+2015-08-03-11:32:34:832 - TRACE - Log4jESLogger - [Araña] I have been elected master, scheduling a ClusterInfoUpdateJob
+2015-08-03-11:32:34:832 - TRACE - Log4jESLogger - [Araña] initial state set from discovery
+2015-08-03-11:32:34:833 - INFO  - Log4jESLogger - [Araña] kodcu/ocKLzTXiS4S_yw7h-7QPWg
+2015-08-03-11:32:34:833 - TRACE - Log4jESLogger - [Araña] performing state recovery...
+2015-08-03-11:32:34:833 - TRACE - Log4jESLogger - [Araña] performing state recovery from [ocKLzTXiS4S_yw7h-7QPWg]
+2015-08-03-11:32:34:833 - DEBUG - Log4jESLogger - [Araña] processing [reroute_rivers_node_changed]: no change in cluster_state
+2015-08-03-11:32:34:834 - TRACE - Log4jESLogger - [Araña] successful state recovery, importing cluster state...
+2015-08-03-11:32:34:835 - DEBUG - Log4jESLogger - [Araña] processing [local-gateway-elected-state]: execute
+2015-08-03-11:32:34:836 - DEBUG - Log4jESLogger - [Araña] [mimos][1]: not allocating, number_of_allocated_shards_found [0], required_number [1]
+2015-08-03-11:32:34:837 - DEBUG - Log4jESLogger - [Araña] [mimos][0]: allocating [[mimos][0], node[null], [P], s[UNASSIGNED]] to [[Araña][ocKLzTXiS4S_yw7h-7QPWg][inet[/10.11.66.27:9301]]] on primary allocation
+2015-08-03-11:32:34:837 - DEBUG - Log4jESLogger - [Araña] [mimos][4]: not allocating, number_of_allocated_shards_found [0], required_number [1]
+2015-08-03-11:32:34:838 - DEBUG - Log4jESLogger - [Araña] [mimos][2]: allocating [[mimos][2], node[null], [P], s[UNASSIGNED]] to [[Araña][ocKLzTXiS4S_yw7h-7QPWg][inet[/10.11.66.27:9301]]] on primary allocation
+2015-08-03-11:32:34:838 - DEBUG - Log4jESLogger - [Araña] [mimos][3]: not allocating, number_of_allocated_shards_found [0], required_number [1]
+2015-08-03-11:32:34:838 - TRACE - Log4jESLogger - [Araña] Start balancing cluster
+2015-08-03-11:32:34:840 - TRACE - Log4jESLogger - [Araña] Start distributing Shards
+2015-08-03-11:32:34:840 - TRACE - Log4jESLogger - [Araña] Assigned shard [[mimos][0], node[ocKLzTXiS4S_yw7h-7QPWg], [P], s[INITIALIZING]] to node [ocKLzTXiS4S_yw7h-7QPWg]
+2015-08-03-11:32:34:840 - TRACE - Log4jESLogger - [Araña] Assigned shard [[mimos][2], node[ocKLzTXiS4S_yw7h-7QPWg], [P], s[INITIALIZING]] to node [ocKLzTXiS4S_yw7h-7QPWg]
+2015-08-03-11:32:34:840 - TRACE - Log4jESLogger - [Araña] Start allocating unassigned shards
+2015-08-03-11:32:34:840 - TRACE - Log4jESLogger - [Araña] No Node found to assign shard [[mimos][0], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:34:841 - TRACE - Log4jESLogger - [Araña] No Node found to assign shard [[mimos][1], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:34:841 - TRACE - Log4jESLogger - [Araña] No Node found to assign shard [[mimos][2], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:34:841 - TRACE - Log4jESLogger - [Araña] No Node found to assign shard [[mimos][3], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:34:841 - TRACE - Log4jESLogger - [Araña] No Node found to assign shard [[mimos][4], node[null], [R], s[UNASSIGNED]]
+2015-08-03-11:32:34:841 - TRACE - Log4jESLogger - [Araña] Start balancing cluster
+2015-08-03-11:32:34:841 - TRACE - Log4jESLogger - [Araña] Start distributing Shards
+2015-08-03-11:32:34:841 - TRACE - Log4jESLogger - [Araña] Assigned shard [[mimos][0], node[ocKLzTXiS4S_yw7h-7QPWg], [P], s[INITIALIZING]] to node [ocKLzTXiS4S_yw7h-7QPWg]
+2015-08-03-11:32:34:842 - TRACE - Log4jESLogger - [Araña] Assigned shard [[mimos][2], node[ocKLzTXiS4S_yw7h-7QPWg], [P], s[INITIALIZING]] to node [ocKLzTXiS4S_yw7h-7QPWg]
+2015-08-03-11:32:34:842 - TRACE - Log4jESLogger - [Araña] Start allocating unassigned shards
+2015-08-03-11:32:34:842 - TRACE - Log4jESLogger - [Araña] cluster state updated:
+version [2], source [local-gateway-elected-state]
+nodes: 
+   [Araña][ocKLzTXiS4S_yw7h-7QPWg][inet[/10.11.66.27:9301]], local, master
+routing_table:
+-- index [mimos]
+----shard_id [mimos][0]
+--------[mimos][0], node[ocKLzTXiS4S_yw7h-7QPWg], [P], s[INITIALIZING]
+--------[mimos][0], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][1]
+--------[mimos][1], node[null], [P], s[UNASSIGNED]
+--------[mimos][1], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][2]
+--------[mimos][2], node[ocKLzTXiS4S_yw7h-7QPWg], [P], s[INITIALIZING]
+--------[mimos][2], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][3]
+--------[mimos][3], node[null], [P], s[UNASSIGNED]
+--------[mimos][3], node[null], [R], s[UNASSIGNED]
+----shard_id [mimos][4]
+--------[mimos][4], node[null], [P], s[UNASSIGNED]
+--------[mimos][4], node[null], [R], s[UNASSIGNED]
+
+routing_nodes:
+-----node_id[ocKLzTXiS4S_yw7h-7QPWg][V]
+--------[mimos][0], node[ocKLzTXiS4S_yw7h-7QPWg], [P], s[INITIALIZING]
+--------[mimos][2], node[ocKLzTXiS4S_yw7h-7QPWg], [P], s[INITIALIZING]
+---- unassigned
+--------[mimos][0], node[null], [R], s[UNASSIGNED]
+--------[mimos][1], node[null], [P], s[UNASSIGNED]
+--------[mimos][1], node[null], [R], s[UNASSIGNED]
+--------[mimos][2], node[null], [R], s[UNASSIGNED]
+--------[mimos][3], node[null], [P], s[UNASSIGNED]
+--------[mimos][3], node[null], [R], s[UNASSIGNED]
+--------[mimos][4], node[null], [P], s[UNASSIGNED]
+--------[mimos][4], node[null], [R], s[UNASSIGNED]
+
+2015-08-03-11:32:34:842 - DEBUG - Log4jESLogger - [Araña] Publishing cluster state version 2
+2015-08-03-11:32:34:843 - DEBUG - Log4jESLogger - [Araña] Set cluster state to version 2. Broadcasting to listeners.
+2015-08-03-11:32:34:843 - DEBUG - Log4jESLogger - [Araña] processing [reroute_rivers_node_changed]: execute
+2015-08-03-11:32:34:845 - DEBUG - Log4jESLogger - [Araña] processing [reroute_rivers_node_changed]: no change in cluster_state
+2015-08-03-11:32:34:843 - DEBUG - Log4jESLogger - [Araña] [mimos] creating index
+2015-08-03-11:32:34:846 - DEBUG - Log4jESLogger - [Araña] creating Index [mimos], shards [5]/[1]
+2015-08-03-11:32:34:856 - INFO  - Log4jESLogger - [Araña] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/10.11.66.27:9201]}
+2015-08-03-11:32:34:856 - INFO  - Log4jESLogger - [Araña] started

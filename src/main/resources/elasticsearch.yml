@@ -1,0 +1,2 @@
+cluster.name: kodcu
+http.cors.enabled: true
